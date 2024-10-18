@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #87CEFA; /* Sky color */
+  font-family: Arial, sans-serif;
+}
+
+.ocean {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1E90FF; /* Ocean color */
+}
+
+.island {
+  position: absolute;
+  bottom: 50px;
+  width: 150px;
+  height: 100px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+}
+
+#island1 { left: 5%; }
+#island2 { left: 25%; }
+#island3 { left: 45%; }
+#island4 { left: 65%; }
+#island5 { left: 85%; }
+
+#whale {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 50px;
+  left: -100px; /* Start off-screen */
+  top: 50vh;
+}
+
+#whale::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: darkgray;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+}
